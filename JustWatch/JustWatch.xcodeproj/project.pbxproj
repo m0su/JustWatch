@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		AAE6CFC5251789580052F257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE6CFC3251789580052F257 /* LaunchScreen.storyboard */; };
 		AAE6CFD0251789580052F257 /* JustWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE6CFCF251789580052F257 /* JustWatchTests.swift */; };
 		AAE6CFDB251789580052F257 /* JustWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE6CFDA251789580052F257 /* JustWatchUITests.swift */; };
+		AAE6CFEA25178DD00052F257 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = AAE6CFE925178DD00052F257 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE6CFEA25178DD00052F257 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = JustWatch;
+			packageProductDependencies = (
+				AAE6CFE925178DD00052F257 /* Then */,
+			);
 			productName = JustWatch;
 			productReference = AAE6CFB5251789570052F257 /* JustWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +221,9 @@
 				Base,
 			);
 			mainGroup = AAE6CFAC251789570052F257;
+			packageReferences = (
+				AAE6CFE825178DD00052F257 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = AAE6CFB6251789570052F257 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -592,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAE6CFE825178DD00052F257 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAE6CFE925178DD00052F257 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE6CFE825178DD00052F257 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE6CFAD251789570052F257 /* Project object */;
 }
